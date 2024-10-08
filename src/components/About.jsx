@@ -23,7 +23,7 @@ const experienceData = [
 
 const About = () => {
     return (
-        <section className="sm:px-8 md:px-12 lg:px-16 xl:px-20pt-[5rem] pb-[5rem] bg-white text-black flex flex-col md:flex-row justify-center items-start gap-7" id="about">
+        <section className="sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-[5rem] pb-[5rem] px-3 bg-white text-black flex flex-col md:flex-row justify-center items-start gap-7" id="about">
             <div className="sm:w-[100%] md:w-[50%]">
                 <div className="flex items-center">
                     <h2 className="text-xl font-semibold">

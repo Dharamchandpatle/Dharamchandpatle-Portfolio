@@ -32,7 +32,7 @@ const MyWorks = () => {
   ]);
 
   return (
-    <section className="lg:p-8 sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-[#ffffff] text-[#000]" id="my-works">
+    <section className="lg:p-8 sm:px-8 md:px-12 lg:px-16 px-3 pt-8 xl:px-20 bg-[#ffffff] text-[#000]" id="my-works">
       <div className="flex items-center">
         <h2 className="text-xl font-semibold">
           <span className="font-bold text-4xl text-[#95adbe]">03.</span> My Best Works are
