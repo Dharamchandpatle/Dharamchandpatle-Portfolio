@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
+
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -57,7 +59,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <img
             className="h-8 w-8 rounded-full"
-            src="https://i.pravatar.cc/300"
+            src={Dharamchand3}
             alt="User Avatar"
           />
           {/* Hamburger Menu Button for Mobile */}

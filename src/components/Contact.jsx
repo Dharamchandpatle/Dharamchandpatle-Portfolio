@@ -52,11 +52,11 @@ const Contact = () => {
         </div>
         <form novalidate className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
           <label className="block">
-            <span className="mb-1">Full name</span>
+            <span className="mb-1 ">Full name</span>
             <input 
               type="text" 
               placeholder="Enter your Name..." 
-              className="block w-full h-10 border-2 hover:border-[#fe9901] rounded-md shadow-sm focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]" 
+              className="block w-full p-2 h-10 border-2 hover:border-[#fe9901] rounded-md shadow-sm focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]" 
             />
           </label>
           <label className="block">
@@ -64,7 +64,7 @@ const Contact = () => {
             <input 
               type="email" 
               placeholder="Enter Your Email..." 
-              className="block w-full h-10 border-2 hover:border-[#fe9901] rounded-md shadow-sm focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]" 
+              className="block w-full p-2 h-10 border-2 hover:border-[#fe9901] rounded-md shadow-sm focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]" 
             />
           </label>
           <label className="block">
@@ -72,7 +72,7 @@ const Contact = () => {
             <textarea 
               rows="3" 
               placeholder="Write your message here..."
-              className="block w-full rounded-md border-2 hover:border-[#fe9901] focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]"
+              className="block w-full p-2 rounded-md border-2 hover:border-[#fe9901] focus:ring focus:ring-[#fe9901] bg-[#f5f4f0] text-[#000]"
             ></textarea>
           </label>
           <div className="btn-box mt-4">

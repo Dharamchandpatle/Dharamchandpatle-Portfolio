@@ -1,5 +1,6 @@
 import React from 'react';
 // import './Animation.css'; // Import the CSS file for animations
+import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
 
 const HomeSection = () => {
   return (
@@ -35,7 +36,7 @@ const HomeSection = () => {
             <a 
               rel="noopener noreferrer" 
               href="#" 
-              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold border rounded border-2 border-[#95adbe] bg-[#f0eff4]"
+              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold  rounded border-2 border-[#95adbe] bg-[#f0eff4]"
             >
               Hire Me
             </a>
@@ -44,9 +45,9 @@ const HomeSection = () => {
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0">
           {/* Updated image with responsive visibility classes */}
           <img 
-           src="https://i.pravatar.cc/300"
+           src={Dharamchand3}
             alt="Business" 
-            className="img-hero object-contain h-64 sm:h-72 lg:h-80 xl:h-96 2xl:h-112 animate-up-down "
+            className="img-hero object-contain h-64 sm:h-72 lg:h-80 xl:h-96 2xl:h-112 animate-up-down img1 my-img"
           />
         </div>
       </div>

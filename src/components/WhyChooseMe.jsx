@@ -92,7 +92,7 @@ const WhyChooseMe = () => {
   }, [experienceCount]);
 
   return (
-    <section className="pt-[5rem] pb-[4rem]sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-[#f5f4f0] text-black flex flex-col sm:flex-row justify-center items-center sm:gap-14" id="Why-choose-me">
+    <section className="pt-[5rem] px-3 pb-[4rem]sm:px-8 md:px-12 lg:px-16 xl:px-20 bg-[#f5f4f0] text-black flex flex-col sm:flex-row justify-center items-center sm:gap-14" id="Why-choose-me">
       {/* Left Section - Services */}
       <div className="sm:w-[53%]">
         <div className="flex items-center">

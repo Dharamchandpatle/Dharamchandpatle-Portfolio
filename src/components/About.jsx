@@ -1,24 +1,43 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaCoffee, FaLinkedin, FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaLinkedin, FaJava } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { FaSass } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
 
 const skillsData = [
     { name: "HTML", icon: <FaHtml5 className="text-2xl text-[#fe9901] mr-2" /> },
-    { name: "C++", icon: <i className="devicon-cplusplus-line colored text-2xl text-[#fe9901] mr-2" /> },
-    { name: "Tailwind CSS", icon: <i className="devicon-tailwindcss-plain colored text-2xl text-[#fe9901] mr-2" /> },
-    { name: "Next.js", icon: <i className="devicon-nextjs-original colored text-2xl text-[#fe9901] mr-2" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-2xl text-[#fe9901] mr-2" /> },
-    { name: "Git", icon: <FaGitAlt className="text-2xl text-[#fe9901] mr-2" /> },
-    { name: "React", icon: <FaReact className="text-2xl text-[#fe9901] mr-2" /> },
-    { name: "Java", icon: <FaJava className="text-2xl text-[#fe9901] mr-2" /> },
+    { name: "CSS", icon: <FaCss3Alt className="devicon-cplusplus-line colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Java Script", icon: <IoLogoJavascript className="devicon-cplusplus-line colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "SASS", icon: <FaSass className="devicon-cplusplus-line colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Tailwind CSS", icon: <RiTailwindCssFill className="devicon-tailwindcss-plain colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "React js", icon: <FaReact className="devicon-nextjs-original colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Node js", icon: <FaNodeJs className="devicon-nextjs-original colored text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Express js", icon: <SiExpress className="text-2xl text-[#fe9901] mr-2" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Git & Github ", icon: <FaGitAlt className="text-2xl text-[#fe9901] mr-2" /> },
+    { name: "Java", icon: <FaJava className="text-2xl text-[#fe9901] mr-2" /> },
+    { name: "DBMS", icon: <FaDatabase className="text-2xl text-[#fe9901] mr-2" /> },
 ];
 
 const experienceData = [
-    { date: "October 2022", title: "Attended CoinDCX Web3 Event As A Volunteer", description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People." },
-    { date: "October 2022", title: "Attended GDSC Event For Android Development", description: "Amazing Session At Davv, Learned Android Development on Kotlin and Guidance for start with Kotlin." },
-    { date: "August 2022", title: "ICPC Coding Contest", description: "Very Different Competitive Experience with My Team. Learn How To Manage Time And How To Manage Work." },
-    { date: "March 2022", title: "Google Cloud Program", description: "Amazing Learning Experience On Google Cloud & Kubernetes." },
+    {
+        date: "October 2022",
+        title: "Attended Hackathon in SV Polytechnic College Bhopal ",
+        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+    },
+    {
+        date: "October 2022",
+        title: "Complete CCNA , Cloud Computing Internship",
+        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+    },
+    {
+        date: "October 2022",
+        title: "Complete Full Stack Development Internship Connect Siksha ",
+        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+    },
+    
 ];
 
 const About = () => {
@@ -62,7 +81,7 @@ const About = () => {
                     <h2 className="font-semibold text-[#4c4c4c] leading-10">
                         Connect With me Now at :&nbsp;&nbsp;
                         <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dharamchand-patle-web-developer-802413282/" className="btn px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-white flex items-center space-x-2">
-                            <FaLinkedin className="text-white" /> 
+                            <FaLinkedin className="text-white" />
                             <span>LinkedIn</span>
                         </a>
                     </h2>
