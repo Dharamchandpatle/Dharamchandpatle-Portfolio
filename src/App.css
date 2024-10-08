@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation.css */
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value for more/less movement */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-up-down {
+  animation: up-down 2s ease-in-out infinite; /* Adjust the duration for speed */
+}
+
+
+:root{
+  --font-color:#000;
+  --para-color:#4c4c4c;
+  --white-color:#ffffff;
+  --hover-color:#a2a8ad;
+  --style-color:#fe9901;
+  --style-bg1-color:#f0eff4;
+  --style-bg2-color:#f5f4f0;
+}
+*{
+  font-family: serif;
+}
+/* ------------------- Hover Button -----------  */
+.img-hero:hover{
+  box-shadow: 2px 2px 2px  #fe9901;  
+}
+
+.btn-box .btn{
+  display: inline-flex ;
+  justify-content: center;
+  align-items: center;
+  transition: .6s;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px 2px ;
+  position: relative;
+  z-index: 1;
+ }
+
+.btn:hover{
+  color: var(--font-color);
+  box-shadow: var(--style-color) 0px 3px 7px;
+}
+  
+.btn::before{
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  transition: .5s;
+  background:var(--style-bg1-color);
+  z-index: -1;
+}
+
+.btn:hover::before{
+  width: 100%;
+}
+
+.btn:nth-child(2):hover{
+  color: var(--white-color);
+  box-shadow: var(--style-color) 0px 3px 7px;
+}
+
+
+.btn:nth-child(2)::before{
+  background:var(--hover-color);
+}
+/* scrollbar  */
+/* App.css */
+
+/* Custom scrollbar for both boxes */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #95adbe; /* Orange scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #f0f0f0; /* Extra padding for the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #95adbe; /* Darker orange on hover */
+}
+
+/* ------------------ About img ---------------  */
+.my-img {
+ 
+  border-radius: 2rem;
+  border: 3px solid var(--hover-color);
+  box-shadow: 5px 5px 15px 5px var(--style-color);
+}
+ .img1 {
+  
+  border-radius: 2rem;
+  translate: -15px -10px;
+  transition: all ease 0.25s;
+}
+.img1:hover {
+  translate: -15px -25px;
+}
+
