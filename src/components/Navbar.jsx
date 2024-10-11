@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 // import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
 
 
@@ -19,36 +20,36 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Why Choose Me?", href: "/whychooseme" },
-    { name: "My Works", href: "/myworks" },
+    { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Why Choose Me?", to: "/whychooseme" },
+    { name: "My Works", to: "/myworks" },
     // { name: "Portfolio", href: "#portfolio" },
-    { name: "Services", href: "/services" },
-    { name: "Contact", href: "/contact" },
+    { name: "Services", to: "/services" },
+    { name: "Contact", to: "/contact" },
   ];
 
   return (
     <nav className="bg-white border-2 border-gray-300 font-serif">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         {/* Logo and Brand Name */}
-        <a href="#home" className="flex items-center space-x-3">
+        <NavLink to="/" className="flex items-center space-x-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-black hover:text-[#95adbe]">
             <span className="text-orange-500">Dharam's</span> Dev
           </span>
-        </a>
+        </NavLink>
 
         {/* Navbar Links */}
         <div className="flex-1 hidden md:flex items-center text-lg justify-center space-x-8 font-bold relative">
           {navItems.map((item, index) => (
             <div key={index} className="relative group">
-              <a
+              <NavLink
                 className={`text-[#000]  ${activeIndex === index ? "font-bold" : ""}`}
-                href={item.href}
+                to ={item.to}
                 onClick={() => handleLinkClick(index)}
               >
                 {item.name}
-              </a>
+              </NavLink>
               {/* Animated Bottom Border */}
               <div className={`absolute bottom-0 left-0 h-0.5 w-full bg-[#fe9901] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${activeIndex === index ? "scale-x-100" : ""}`} />
             </div>
