@@ -1,6 +1,6 @@
 import React from "react";
 import { TbWorldWww } from "react-icons/tb";
-import { MdDesignServices } from "react-icons/md";
+import { MdDesignServices, MdOutlineOndemandVideo } from "react-icons/md";
 
 const Services = () => {
   // Data for each service
@@ -109,7 +109,7 @@ const Icon = ({ icon }) => {
   }
   if (icon === "code") {
     return (
-      <TbWorldWww className="text-4xl"/>
+      <MdOutlineOndemandVideo className="text-4xl"/>
 
     );
   }
