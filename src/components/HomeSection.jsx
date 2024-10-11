@@ -36,7 +36,7 @@ const HomeSection = () => {
             </a>
             <a 
               rel="noopener noreferrer" 
-              href="#contact" 
+              href="/contact" 
               className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#f0eff4]"
             >
               Connect with me 
