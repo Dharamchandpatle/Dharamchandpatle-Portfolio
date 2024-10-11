@@ -52,7 +52,7 @@ const projects = [
     description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
     image: 'images/traversy.png',
     link: 'https://traversi-travel-reactjs-cwxutmoqb-dharamchandpatles-projects.vercel.app/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
+    technologies: ['React js', 'Node js', 'JavaScript', 'MongoDB'],
   },
 ];
 
@@ -111,17 +111,17 @@ const Portfolio = () => {
                     {project.technologies.map((tech) => (
                       <div
                         key={tech}
-                        className="flex items-center bg-[#ffff] rounded-lg p-1 shadow-md transition-transform transform hover:scale-102"
+                        className="flex items-center bg-[#ffff] rounded-lg p-1 mb-2 mx-2 shadow-md transition-transform transform hover:scale-102"
                       >
-                        {tech === 'HTML' && <FaHtml5 className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'CSS' && <FaCss3Alt className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'JavaScript' && <FaJs className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'Tailwind CSS' && <SiTailwindcss className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'React js' && <FaReact className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'Node js' && <FaNodeJs className="text-lg text-[#fe9901] mr-3" />}
-                        {tech === 'MongoDB' && <SiMongodb className="text-lg text-[#fe9901] mr-3" />}
+                        {tech === 'HTML' && <FaHtml5 className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'CSS' && <FaCss3Alt className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'JavaScript' && <FaJs className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'Tailwind CSS' && <SiTailwindcss className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'React js' && <FaReact className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'Node js' && <FaNodeJs className="text-lg text-[#fe9901] mr-2" />}
+                        {tech === 'MongoDB' && <SiMongodb className="text-lg text-[#fe9901] mr-2" />}
 
-                        &nbsp;<span className="text-[#4c4c4c] text-xs">{tech}</span>
+                        &nbsp;<span className="text-[#4c4c4c] text-xs m1-2">{tech}</span>
                       </div>
                     ))}
                   </div>
