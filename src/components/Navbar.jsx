@@ -102,13 +102,13 @@ const Navbar = () => {
             <ul className="space-y-4 font-bold">
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a
-                    href={item.href}
+                  <NavLink
+                    to={item.to}
                     className="hover:text-gray-500"
                     onClick={() => handleLinkClick(index)}
                   >
                     {item.name}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>

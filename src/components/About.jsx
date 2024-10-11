@@ -23,19 +23,34 @@ const skillsData = [
 
 const experienceData = [
     {
-        date: "October 2022",
-        title: "Attended Hackathon in SV Polytechnic College Bhopal ",
-        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+        date: "july 2020 - july 2021",
+        title: "Higher Secondary School , Bakera , Madhya Pradesh",
+        description: "I scored 86.8% in 10th and 87.2% in 12th. I had Maths and Science subjects in my 11th and 12th. And during my school time, I always tried to learn something new and did something new every time."
     },
     {
-        date: "October 2022",
-        title: "Complete CCNA , Cloud Computing Internship",
-        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+        date: "Dec 2021 - May 2024",
+        title: "Govt. Polytechnic College Balaghat , Madhya Pradesh",
+        description: "Pursuing a Diploma in Computer Science & Engineering from Govt. Polytechnic College Balaghat, with a strong academic foundation reflected by a CGPA of 8.81. Passionate about leveraging technology to solve real-world problems and continuously learning to stay at the cutting edge of innovation."
     },
     {
-        date: "October 2022",
-        title: "Complete Full Stack Development Internship Connect Siksha ",
-        description: "Amazing Experience, Interaction With Many Personalities And Next Level Learning From People."
+        date: "Sep 2024 - Running",
+        title: "Institute of Engineering & Technology DAVV , Indore , Madhya Pradesh",
+        description: "Aspiring Computer Science & Engineering professional currently pursuing my degree at the Institute of Engineering & Technology, DAVV, Indore. Passionate about leveraging my technical skills and academic knowledge to solve real-world challenges and contribute to impactful projects."
+    },
+    {
+        date: "Sep 2024 - Running",
+        title: "Institute of Engineering & Technology DAVV , Indore , Madhya Pradesh",
+        description: "Aspiring Computer Science & Engineering professional currently pursuing my degree at the Institute of Engineering & Technology, DAVV, Indore. Passionate about leveraging my technical skills and academic knowledge to solve real-world challenges and contribute to impactful projects."
+    },
+    {
+        date: "10 Oct 2023 ",
+        title: "State Level Championship Hackathon , Bhopal , Madhya Pradesh",
+        description: " the State Level Championship Hackathon, Bhopal, showcasing innovative problem-solving and technical skills in a highly competitive environment ."
+    },
+    {
+        date: "09 may 2023 - 24 may 2023",
+        title: "Certicate Of Industrial Training Networking , CCNA & Cloud ",
+        description: "Certified in Industrial Training: Networking, CCNA & Cloud - Gained hands-on experience in network management, routing protocols, and cloud technologies. Equipped with skills in designing and securing scalable networks, and proficient in cloud computing environments."
     },
     
 ];
@@ -90,7 +105,7 @@ const About = () => {
 
             {/* Right Side - Experience */}
             <div className="bg-white shadow-lg p-6 rounded-md flex-grow md:w-[50%] max-h-[30rem] overflow-y-auto custom-scrollbar mt-4 md:mt-0">
-                <h2 className="text-2xl font-bold mb-4">Experience</h2>
+                <h2 className="text-2xl font-bold mb-4">Education & Certificates </h2>
                 <div className="space-y-6">
                     {experienceData.map((experience, index) => (
                         <div key={index} className="border-l-4 border-[#fe9901] pl-4">

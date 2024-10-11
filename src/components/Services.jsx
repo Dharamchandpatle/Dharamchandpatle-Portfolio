@@ -54,7 +54,7 @@ const Services = () => {
                 Our <span className="text-[#4c4c4c]">SERVICES</span>
               </h1>
               <div className="flex w-24 mt-1 mb-10 overflow-hidden rounded">
-                <div className="flex-1 h-2 bg-blue-200"></div>
+                <div className="flex-1 h-2 bg-orange-200"></div>
                 <div className="flex-1 h-2 bg-[#a2a8ad]"></div>
                 <div className="flex-1 h-2 bg-[#4c4c4c]"></div>
               </div>
@@ -82,7 +82,7 @@ const Services = () => {
 // Service Card Component
 const ServiceCard = ({ title, description, icon }) => {
   return (
-    <div className="sm:px-8 md:px-12 lg:px-10 xl:px-20  mb-14 text-center transition-all bg-[#f0eff4] text-[#4c4c4c] rounded shadow hover:shadow-lg hover:shadow-[#fe9901]">
+    <div className="sm:px-8 md:px-12 lg:px-10 xl:px-20 pb-4 px-2  mb-14 text-center transition-all bg-[#f0eff4] text-[#4c4c4c] rounded shadow hover:shadow-lg hover:shadow-[#fe9901]">
       <div className="inline-block p-2 mb-6 -mt-16 bg-[#f0eff4] text-[#000] shadow-lg shadow-[#fe9901] rounded-full">
         {/* SVG Icon */}
         <Icon icon={icon} />

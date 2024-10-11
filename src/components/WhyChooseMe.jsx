@@ -152,7 +152,7 @@ const WhyChooseMe = () => {
       <br />
 
       {/* Right Section - Counters */}
-      <div className="flex justify-center items-center gap-5 sm:flex-wrap sm:pt-12">
+      <div className="flex justify-center items-center gap-5 sm:flex-wrap sm:pt-12 pb-5">
         <div className="">
           <div className="lg:text-2xl sm:text-base text-center border-2 lg:mb-4 p-6 lg:p-6 sm:p-6 shadow-md hover:shadow-[#fe9901] rounded-l-lg border-[#fe9901]">
             <h2>{clientCount}+</h2>
