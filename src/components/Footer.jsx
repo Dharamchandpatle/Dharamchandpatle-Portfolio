@@ -9,6 +9,7 @@ const Footer = () => {
           {/* Profile Image Section */}
           <div className="flex justify-center pb-4">
             <img
+            href="/"
               src='images/Dharamchand3.jpg'
               alt="Dharamchand Patle"
               className="w-24 h-24 shadow-lg rounded-full border-4 border-[#95adbe] shadow-[#fe9901]"
@@ -19,7 +20,7 @@ const Footer = () => {
           <h3 className="font-bold text-2xl">Dharamchand Patle</h3>
           <h4 className="font-bold">
             Copyright©2024
-            <a href="#home" className="text-[#95adbe] ml-1">
+            <a href="/" className="text-[#95adbe] ml-1">
               Dharamchand Patle
             </a>
           </h4>

@@ -20,7 +20,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border-2 shadow-lg border-[#95adbe] text-[#000] bg-[#ffffff] hover:bg-[#95adbe] hover:text-[#ffffff] flex items-center justify-center w-10 h-10"
-              href="https://www.linkedin.com/in/dharamchand-patle-web-developer-802413282/"
+              href="https://www.linkedin.com/in/dharamchand-fullstackdeveloper/"
             >
               <FaLinkedin />
             </a>
@@ -30,7 +30,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full shadow-lg border-2 border-[#95adbe] text-[#000] bg-[#ffffff] hover:bg-[#95adbe] hover:text-[#ffffff] flex items-center justify-center w-10 h-10"
-              href="https://github.com/"
+              href="https://github.com/Dharamchandpatle"
             >
               <FaGithubSquare />
             </a>

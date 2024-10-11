@@ -80,7 +80,7 @@ const About = () => {
                 <div className="btn-box mt-4">
                     <h2 className="font-semibold text-[#4c4c4c] leading-10">
                         Connect With me Now at :&nbsp;&nbsp;
-                        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dharamchand-patle-web-developer-802413282/" className="btn px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-white flex items-center space-x-2">
+                        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/dharamchand-fullstackdeveloper/" className="btn px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-white flex items-center space-x-2">
                             <FaLinkedin className="text-white" />
                             <span>LinkedIn</span>
                         </a>
