@@ -1,5 +1,5 @@
 import React from 'react';
-import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
+// import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Profile Image Section */}
           <div className="flex justify-center pb-4">
             <img
-              src={Dharamchand3}
+              src='images/Dharamchand3.jpg'
               alt="Dharamchand Patle"
               className="w-24 h-24 shadow-lg rounded-full border-4 border-[#95adbe] shadow-[#fe9901]"
             />

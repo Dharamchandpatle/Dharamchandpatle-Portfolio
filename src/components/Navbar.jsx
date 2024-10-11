@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
+// import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
 
 
 const Navbar = () => {
@@ -19,13 +19,13 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Why Choose Me?", href: "#why-choose-me" },
-    { name: "My Works", href: "#my-works" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Why Choose Me?", href: "/whychooseme" },
+    { name: "My Works", href: "/myworks" },
+    // { name: "Portfolio", href: "#portfolio" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <img
             className="h-8 w-8 rounded-full"
-            src={Dharamchand3}
+            src='images/Dharamchand3.jpg'
             alt="User Avatar"
           />
           {/* Hamburger Menu Button for Mobile */}

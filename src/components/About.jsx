@@ -58,7 +58,7 @@ const About = () => {
                         Hello, I am <span className="font-bold text-2xl text-[#fe9901]">D</span>haramchand <span className="font-bold text-2xl text-[#95adbe]">P</span>atle
                     </h1>
                     <p className="text-[#4c4c4c]">
-                        I am a Freelance Web Designer. I work with small business owners, startups, and individuals who want to get more online visibility.
+                    Full Stack Developer with expertise in React.js and Node.js, specializing in building responsive web applications. Skilled in front-end and back-end technologies, I create seamless user experiences with scalable, efficient solutions.
                     </p>
                     <p className="text-[#4c4c4c]">
                         Here are technologies I’ve been working with recently:

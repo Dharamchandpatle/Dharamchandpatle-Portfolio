@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithubSquare, FaInstagramSquare, FaSearch } from 'react-icons/fa';
+import { FaLinkedin, FaGithubSquare, FaInstagramSquare, FaSearch, FaYoutube } from 'react-icons/fa';
 import { IoCall } from 'react-icons/io5';
 
 const Header = () => {
@@ -40,9 +40,10 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full shadow-lg border-2 border-[#95adbe] text-[#000] bg-[#ffffff] hover:bg-[#95adbe] hover:text-[#ffffff] flex items-center justify-center w-10 h-10"
-              href="tel:+91 6263827162"
+              href="https://www.youtube.com/@DharamsCodeMystery7"
             >
-              <IoCall />
+              <FaYoutube />
+
             </a>
           </li>
           <li>
@@ -50,7 +51,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full shadow-lg border-2 border-[#95adbe] text-[#000] bg-[#ffffff] hover:bg-[#95adbe] hover:text-[#ffffff] flex items-center justify-center w-10 h-10"
-              href="#"
+              href="https://www.instagram.com/dharamcodemystery7/?next=%2F"
             >
               <FaInstagramSquare />
             </a>

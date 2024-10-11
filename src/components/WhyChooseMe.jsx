@@ -107,9 +107,9 @@ const WhyChooseMe = () => {
             <span className="font-bold text-2xl text-[#fe9901]">C</span>reative <span className="font-bold text-2xl text-[#fe9901]">W</span>eb <span className="font-bold text-2xl text-[#fe9901]">D</span>esigner
           </h1>
           <p className="text-[#212121]">
-            I have a broad technical skill set and three years of expertise in front-end web development. Capable of multitasking and juggling numerous urgent projects simultaneously.
-          </p><br />
-          <p className="text-[#2a2a2a]">Here are all services that I’ll be offering to you:</p>
+          Passionate Full Stack Developer skilled in React.js and Node.js, dedicated to crafting modern, responsive web applications. Committed to delivering clean, efficient code and innovative solutions that blend design and functionality for optimal user experiences.
+          </p>
+          <p className="text-[#2a2a2a]"><b>Here are all services that I’ll be offering to you:</b></p>
         </div>
         <br />
 
@@ -141,9 +141,9 @@ const WhyChooseMe = () => {
 
         <div className="btn-box mt-4">
           <h2 className="font-semibold text-[#4c4c4c] leading-10">Click Now:&nbsp;&nbsp;
-            <a rel="noopener noreferrer" download="" target="_blank" href="https://drive.google.com/file/d/13KFA4C2IZPpCyJ3ctOajH1ov367W-y6N/view?usp=sharing" className="btn px-5 sm:px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]">
+            <a rel="noopener noreferrer" download="" target="_blank" href="https://drive.google.com/file/d/1S5KFbG2woWy5aHpYGdHNozkAWtM6qTXs/view?usp=drivesdk" className="btn px-5 sm:px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]">
               &nbsp;&nbsp;<FaDownload />
-              &nbsp;Download CV
+              &nbsp; Resume 
             </a>
           </h2>
         </div>

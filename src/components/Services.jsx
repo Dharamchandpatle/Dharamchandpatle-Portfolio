@@ -1,13 +1,15 @@
 import React from "react";
+import { TbWorldWww } from "react-icons/tb";
+import { MdDesignServices } from "react-icons/md";
 
 const Services = () => {
   // Data for each service
   const serviceData = [
     {
       id: 1,
-      title: "WEB DESIGN",
+      title: "RESPONSIVE WEB DEVELOPMENT",
       description:
-        "Elevate your brand with our custom web design services. From sleek layouts to immersive experiences, we craft websites tailored to your vision.",
+        "Crafting seamless digital experiences. Our responsive web development services ensure your site adapts flawlessly across all devices.",
       icon: "settings",
     },
     {
@@ -19,9 +21,9 @@ const Services = () => {
     },
     {
       id: 3,
-      title: "RESPONSIVE WEB DEVELOPMENT",
+      title: "Content Creator ",
       description:
-        "Crafting seamless digital experiences. Our responsive web development services ensure your site adapts flawlessly across all devices.",
+        "Passionate Content Creator at Dharam's Code Mystery 7, crafting engaging and educational coding tutorials. Follow me on YouTube and Instagram for tips, tricks, and the latest in programming!",
       icon: "code",
     },
     // Add more services here...
@@ -80,13 +82,13 @@ const Services = () => {
 // Service Card Component
 const ServiceCard = ({ title, description, icon }) => {
   return (
-    <div className="sm:px-8 md:px-12 lg:px-16 xl:px-20  mb-14 text-center transition-all bg-[#f0eff4] text-[#4c4c4c] rounded shadow hover:shadow-lg hover:shadow-[#fe9901]">
-      <div className="inline-block p-4 mb-6 -mt-16 bg-[#f0eff4] text-[#000] shadow-lg shadow-[#fe9901] rounded-full">
+    <div className="sm:px-8 md:px-12 lg:px-10 xl:px-20  mb-14 text-center transition-all bg-[#f0eff4] text-[#4c4c4c] rounded shadow hover:shadow-lg hover:shadow-[#fe9901]">
+      <div className="inline-block p-2 mb-6 -mt-16 bg-[#f0eff4] text-[#000] shadow-lg shadow-[#fe9901] rounded-full">
         {/* SVG Icon */}
         <Icon icon={icon} />
       </div>
       <h3 className="mb-4 text-2xl font-semibold text-[#000]">{title}</h3>
-      <p className="text-base text-[#4c4c4c]">{description}</p>
+      <p className="text-base text-[#4c4c4c] pb-3">{description}</p>
     </div>
   );
 };
@@ -95,23 +97,20 @@ const ServiceCard = ({ title, description, icon }) => {
 const Icon = ({ icon }) => {
   if (icon === "settings") {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" className="text-white" viewBox="0 0 16 16">
-        {/* Your SVG Path Here */}
-      </svg>
+      <TbWorldWww className="text-4xl" />
+
     );
   }
   if (icon === "design") {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" className="text-blue-400" viewBox="0 0 16 16">
-        {/* Your SVG Path Here */}
-      </svg>
+      <MdDesignServices className="text-4xl" />
+
     );
   }
   if (icon === "code") {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" className="text-white" viewBox="0 0 16 16">
-        {/* Your SVG Path Here */}
-      </svg>
+      <TbWorldWww className="text-4xl"/>
+
     );
   }
   return null;
