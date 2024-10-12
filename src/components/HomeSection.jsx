@@ -1,6 +1,7 @@
 import React from 'react';
 // import Dharamchand3 from '../assets/images/Dharamchand3.jpg';
 import { FaDownload } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const HomeSection = () => {
   return (
@@ -34,13 +35,13 @@ const HomeSection = () => {
             >
               <FaDownload /> &nbsp; Resume
             </a>
-            <a 
+            <NavLink 
               rel="noopener noreferrer" 
-              href="/contact" 
+              to="/contact" 
               className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#f0eff4]"
             >
               Connect with me 
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 lg:w-2/5">

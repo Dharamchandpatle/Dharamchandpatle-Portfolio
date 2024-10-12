@@ -38,9 +38,9 @@ const experienceData = [
         description: "Aspiring Computer Science & Engineering professional currently pursuing my degree at the Institute of Engineering & Technology, DAVV, Indore. Passionate about leveraging my technical skills and academic knowledge to solve real-world challenges and contribute to impactful projects."
     },
     {
-        date: "Sep 2024 - Running",
-        title: "Institute of Engineering & Technology DAVV , Indore , Madhya Pradesh",
-        description: "Aspiring Computer Science & Engineering professional currently pursuing my degree at the Institute of Engineering & Technology, DAVV, Indore. Passionate about leveraging my technical skills and academic knowledge to solve real-world challenges and contribute to impactful projects."
+        date: "10 Oct 2023 ",
+        title: "MERN Stack Internship Completed , Connect Siksha , Balaghat ",
+        description: "MERN Stack Intern Connect Siksha, Balaghat Worked on full-stack web development using MongoDB, Express, React, and Node.js, building responsive and scalable applications."
     },
     {
         date: "10 Oct 2023 ",
