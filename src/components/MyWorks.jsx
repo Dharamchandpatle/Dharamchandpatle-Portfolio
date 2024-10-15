@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: 'Girls Beauty parlour website',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
+    description: 'Transform Your Look with Our Modern Girls Beauty Parlour – Powered by HTML, CSS, JavaScript, and Tailwind CSS .',
     image: 'images/Girls Beauty parlour website.png',
     link: 'https://timely-lily-9bf1da.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: 'Purulia Travel Agency 🚀',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
+    description: 'Purulia Travel Agency 🚀: Powered by React, JavaScript, and Node.js for Seamless Travel Experiences!',
     image: 'images/purulia-travel.png',
     link: 'https://puruliatravelsfinal.netlify.app/',
     technologies: ['React js', 'JavaScript', 'Node js'],
@@ -25,7 +25,7 @@ const projects = [
   {
     id: 3,
     title: 'Connect Siksha Coding School',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
+    description: 'Master the Web with Connect Siksha Coding School: Learn React.js, Node.js, and MongoDB to Build Dynamic, Full-Stack Applications!',
     image: 'images/conectsiksha.png',
     link: 'https://connectshiksha.com/',
     technologies: ['React js', 'Node js', 'MongoDB'],
@@ -33,7 +33,7 @@ const projects = [
   {
     id: 4,
     title: 'Udemy Coding School Clone',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
+    description: 'Master full-stack development with cutting-edge technologies like React JS, JavaScript, and Node JS in this dynamic Udemy Coding School Clone!',
     image: 'images/Udemy.png',
     link: 'https://udemy-clone-bw5udkzns-dharamchandpatles-projects.vercel.app/',
     technologies: ['React js', 'JavaScript', 'Node js'],
@@ -41,7 +41,7 @@ const projects = [
   {
     id: 5,
     title: 'Boy Hair Shailu Website',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
+    description: 'Discover the Ultimate Guide to Trendy Hairstyles with the Boy Hair Shailu Website - Powered by HTML, CSS, JavaScript, and Tailwind CSS for a Seamless User Experience.',
     image: 'images/image.png',
     link: 'https://fabulous-conkies-dac0a5.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],

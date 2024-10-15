@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import Dharamchand3 from '../assets/images/Dharamchand3.jpg'
-
 
 const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -24,7 +22,6 @@ const Navbar = () => {
     { name: "About", to: "/about" },
     { name: "Why Choose Me?", to: "/whychooseme" },
     { name: "My Works", to: "/myworks" },
-    // { name: "Portfolio", href: "#portfolio" },
     { name: "Services", to: "/services" },
     { name: "Contact", to: "/contact" },
   ];
@@ -90,31 +87,29 @@ const Navbar = () => {
       </div>
 
       {/* Sidebar for Mobile View */}
-      {isSidebarOpen && (
-        <div className="fixed inset-0 z-40 bg-black bg-opacity-50">
-          <div className="fixed inset-y-0 left-0 z-50 w-64 p-4 bg-white shadow-lg">
-            <button
-              onClick={toggleSidebar}
-              className="text-black text-2xl mb-4 focus:outline-none"
-            >
-              X
-            </button>
-            <ul className="space-y-4 font-bold">
-              {navItems.map((item, index) => (
-                <li key={index}>
-                  <NavLink
-                    to={item.to}
-                    className="hover:text-gray-500"
-                    onClick={() => handleLinkClick(index)}
-                  >
-                    {item.name}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className={`fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-700 ${isSidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+        <div className={`fixed inset-y-0 left-0 z-50 w-64 p-4 bg-white shadow-lg transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+          <button
+            onClick={toggleSidebar}
+            className="text-black text-2xl mb-4 focus:outline-none"
+          >
+            X
+          </button>
+          <ul className="space-y-4 font-bold">
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <NavLink
+                  to={item.to}
+                  className="hover:text-gray-500"
+                  onClick={() => handleLinkClick(index)}
+                >
+                  {item.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
