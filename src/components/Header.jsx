@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLinkedin, FaGithubSquare, FaInstagramSquare, FaSearch, FaYoutube } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 import { IoCall } from 'react-icons/io5';
 
 const Header = () => {
@@ -54,6 +55,17 @@ const Header = () => {
               href="https://www.instagram.com/dharamcodemystery7/?next=%2F"
             >
               <FaInstagramSquare />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full shadow-lg border-2 border-[#95adbe] text-[#000] bg-[#ffffff] hover:bg-[#95adbe] hover:text-[#ffffff] flex items-center justify-center w-10 h-10"
+              href="https://leetcode.com/u/Dharamchand_Patle/"
+            >
+             <SiLeetcode />
+
             </a>
           </li>
         </ul>

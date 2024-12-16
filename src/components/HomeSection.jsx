@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 // import Dharamchand3 from '../assets/images/Dharamchand3.jpg';
 import { FaDownload } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
@@ -16,13 +17,29 @@ const HomeSection = () => {
             <span className="font-bold text-5xl text-[#95adbe]">P</span>atle 
           </h1>
           <br />
-          <h3 className="font-semibold text-2xl sm:text-3xl">I build things for the web.</h3>
+          <h3 className="font-semibold text-2xl sm:text-3xl">
+            <span style={{ color: '#000' }}>
+              <Typewriter
+                words={[
+                  "I build things for the web 👨‍💻.",
+                  "Content Creator ⚡.",
+                  "JAVA + DSA Enthusiast.",
+                ]}
+                loop={Infinity}
+                cursor
+                cursorStyle="_"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </h3>
           <p className="mt-6 mb-8 text-base sm:text-lg lg:text-base xl:text-lg">
             I am a <span className="text-2xl text-[#fe9901]">F</span>ull 
             <span className="text-2xl text-[#fe9901]"> S</span>tack
             <span className="text-2xl text-[#fe9901]"> W</span>eb 
             <span className="text-2xl text-[#fe9901]"> D</span>eveloper. 
-            with expertise in React.js, Tailwind CSS, HTML, CSS, JavaScript, and Node.js. 
+            with expertise in React.js, Tailwind CSS, JavaScript, and Node.js , Mongo DB .  
             <br className="hidden md:inline lg:hidden" />Proficient in the MERN stack and skilled in UI/UX design.
           </p>
           <div className="btn-box flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
@@ -45,7 +62,6 @@ const HomeSection = () => {
           </div>
         </div>
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 lg:w-2/5">
-          {/* Updated image with responsive visibility classes */}
           <img 
             src='images/Dharamchand3.jpg'
             alt="Business" 
