@@ -21,7 +21,7 @@ const HomeSection = () => {
             <span style={{ color: '#000' }}>
               <Typewriter
                 words={[
-                  "I build things for the web .",
+                  "I build things for the web.",
                   "Content Creator 🚀.",
                   "JAVA + DSA Enthusiast.",
                 ]}
