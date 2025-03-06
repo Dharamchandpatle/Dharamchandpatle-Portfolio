@@ -47,7 +47,7 @@ const HomeSection = () => {
               rel="noopener noreferrer" 
               download 
               target="_blank" 
-              href="https://drive.google.com/file/d/1S5KFbG2woWy5aHpYGdHNozkAWtM6qTXs/view?usp=drivesdk" 
+              href="https://drive.google.com/file/d/186Kk1b1d-39D3LFdR9Y3RmczzvnTehzP/view?usp=drivesdk" 
               className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]"
             >
               <FaDownload /> &nbsp; Resume

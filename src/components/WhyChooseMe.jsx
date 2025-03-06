@@ -141,7 +141,7 @@ const WhyChooseMe = () => {
 
         <div className="btn-box mt-4">
           <h2 className="font-semibold text-[#4c4c4c] leading-10">Click Now:&nbsp;&nbsp;
-            <a rel="noopener noreferrer" download="" target="_blank" href="https://drive.google.com/file/d/1S5KFbG2woWy5aHpYGdHNozkAWtM6qTXs/view?usp=drivesdk" className="btn px-5 sm:px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]">
+            <a rel="noopener noreferrer" download="" target="_blank" href="https://drive.google.com/file/d/186Kk1b1d-39D3LFdR9Y3RmczzvnTehzP/view?usp=drivesdk" className="btn px-5 sm:px-5 py-2 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]">
               &nbsp;&nbsp;<FaDownload />
               &nbsp; Resume 
             </a>
