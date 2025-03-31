@@ -57,7 +57,7 @@ const Header = () => {
               <FaInstagramSquare />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Header = () => {
              <SiLeetcode />
 
             </a>
-          </li>
+          </li> */}
         </ul>
 
         {/* Logo / Title */}
