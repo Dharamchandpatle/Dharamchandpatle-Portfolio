@@ -1,8 +1,7 @@
-import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaArrowRight, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaArrowRight, FaCss3Alt, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiMongodb, SiTailwindcss } from 'react-icons/si';
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 const projects = [
@@ -61,7 +60,7 @@ const Portfolio = () => {
     <section className="py-12 mt-10 bg-[#ffffff] text-[#000] lg:px-16 sm:px-8 px-4">
       <div className="flex items-center pb-4">
         <h2 className="text-2xl font-semibold">
-          <span className="font-bold text-4xl text-[#95adbe]">03.</span> My Works
+          <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">03.</span> My Works
         </h2>
         <div className="flex items-center pl-3">
           <span className="block w-24 h-1 rounded bg-[#fe9901]"></span>

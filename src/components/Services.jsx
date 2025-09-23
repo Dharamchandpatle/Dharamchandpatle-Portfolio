@@ -1,6 +1,5 @@
-import React from "react";
-import { TbWorldWww } from "react-icons/tb";
 import { MdDesignServices, MdOutlineOndemandVideo } from "react-icons/md";
+import { TbWorldWww } from "react-icons/tb";
 
 const Services = () => {
   // Data for each service
@@ -35,7 +34,7 @@ const Services = () => {
         {/* Title Section */}
         <div className="flex items-center">
           <h2 className="text-xl font-semibold">
-            <span className="font-bold text-4xl text-[#95adbe]">05.</span> Services
+            <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">05.</span> Services
           </h2>
           <div className="flex items-center pl-3">
             <span className="block w-24 h-1 rounded bg-[#fe9901]"></span>
@@ -50,7 +49,7 @@ const Services = () => {
               <div className="absolute hidden md:block -top-14 left-0 text-[120px] text-gray-400 font-bold opacity-10">
                 SERVICES
               </div>
-              <h1 className="text-5xl font-bold dark:text-[#fe9901]">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-[#fe9901]">
                 Our <span className="text-[#4c4c4c]">SERVICES</span>
               </h1>
               <div className="flex w-24 mt-1 mb-10 overflow-hidden rounded">

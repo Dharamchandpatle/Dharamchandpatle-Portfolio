@@ -1,4 +1,3 @@
-import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 // import Dharamchand3 from '../assets/images/Dharamchand3.jpg';
 import { FaDownload } from 'react-icons/fa';
@@ -13,8 +12,8 @@ const HomeSection = () => {
             <span className="text-4xl">H</span>i , My Name is 
           </h2>
           <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold leading-snug">
-            <span className="font-bold text-6xl text-[#fe9901]">D</span>haramchand 
-            <span className="font-bold text-5xl text-[#95adbe]">P</span>atle 
+            <span className="font-bold text-4xl sm:text-5xl lg:text-6xl text-[#fe9901]">D</span>haramchand 
+            <span className="font-bold text-3xl sm:text-4xl lg:text-5xl text-[#95adbe]">P</span>atle 
           </h1>
           <br />
           <h3 className="font-semibold text-2xl sm:text-3xl">

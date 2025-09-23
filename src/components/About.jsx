@@ -1,10 +1,8 @@
-import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaLinkedin, FaJava } from "react-icons/fa";
+import { FaCss3Alt, FaDatabase, FaGitAlt, FaHtml5, FaJava, FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaSass } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
-import { FaSass } from "react-icons/fa6";
-import { SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
 
 const skillsData = [
     { name: "HTML", icon: <FaHtml5 className="text-2xl text-[#fe9901] mr-2" /> },
@@ -61,7 +59,7 @@ const About = () => {
             <div className="sm:w-[100%] md:w-[50%]">
                 <div className="flex items-center">
                     <h2 className="text-xl font-semibold">
-                        <span className="font-bold text-4xl text-[#95adbe]">01.</span> About Me
+                        <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">01.</span> About Me
                     </h2>
                     <div className="flex items-center pl-3">
                         <span className="block w-24 h-1 rounded bg-[#fe9901]"></span>
@@ -69,8 +67,8 @@ const About = () => {
                 </div>
 
                 <div className="description mt-4 text-lg">
-                    <h1 className="leading-10 font-semibold text-2xl">
-                        Hello, I am <span className="font-bold text-2xl text-[#fe9901]">D</span>haramchand <span className="font-bold text-2xl text-[#95adbe]">P</span>atle
+                    <h1 className="leading-10 font-semibold text-xl sm:text-2xl">
+                        Hello, I am <span className="font-bold text-xl sm:text-2xl text-[#fe9901]">D</span>haramchand <span className="font-bold text-xl sm:text-2xl text-[#95adbe]">P</span>atle
                     </h1>
                     <p className="text-[#4c4c4c]">
                     Full Stack Developer with expertise in React.js and Node.js, specializing in building responsive web applications. Skilled in front-end and back-end technologies, I create seamless user experiences with scalable, efficient solutions.

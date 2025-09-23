@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { FaBolt, FaHandshake, FaHourglassHalf, FaReact, FaThumbsUp } from 'react-icons/fa';
-import { FaDownload } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { FaBolt, FaDownload, FaHandshake, FaHourglassHalf, FaReact, FaThumbsUp } from 'react-icons/fa';
 
 // Sample data for services using React Icons
 const servicesData = [
@@ -96,15 +95,15 @@ const WhyChooseMe = () => {
       {/* Left Section - Services */}
       <div className="sm:w-[53%]">
         <div className="flex items-center">
-          <h2 className="text-xl font-semibold"><span className="font-bold text-4xl text-[#95adbe]">02.</span> Why Choose Me?</h2>
+          <h2 className="text-xl font-semibold"><span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">02.</span> Why Choose Me?</h2>
           <div className="flex items-center pl-3">
             <span className="block w-24 h-1 rounded bg-[#fe9901]"></span>
           </div>
         </div>
 
         <div className="description text-lg mt-4">
-          <h1 className="leading-10 font-semibold text-2xl">
-            <span className="font-bold text-2xl text-[#fe9901]">C</span>reative <span className="font-bold text-2xl text-[#fe9901]">W</span>eb <span className="font-bold text-2xl text-[#fe9901]">D</span>esigner
+          <h1 className="leading-10 font-semibold text-xl sm:text-2xl">
+            <span className="font-bold text-xl sm:text-2xl text-[#fe9901]">C</span>reative <span className="font-bold text-xl sm:text-2xl text-[#fe9901]">W</span>eb <span className="font-bold text-xl sm:text-2xl text-[#fe9901]">D</span>esigner
           </h1>
           <p className="text-[#212121]">
           Passionate Full Stack Developer skilled in React.js and Node.js, dedicated to crafting modern, responsive web applications. Committed to delivering clean, efficient code and innovative solutions that blend design and functionality for optimal user experiences.

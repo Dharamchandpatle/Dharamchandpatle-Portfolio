@@ -1,5 +1,4 @@
-import React from 'react';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineLink } from 'react-icons/hi';
 
 const Contact = () => {
@@ -7,7 +6,7 @@ const Contact = () => {
     <section className="py-24 bg-[#ffffff] text-[#000]" id="contact">
       <div className="flex items-center px-6 md:px-12 lg:px-24">
         <h2 className="text-xl font-semibold">
-          <span className="font-bold text-4xl text-[#95adbe]">06.</span> Contact Me
+          <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">06.</span> Contact Me
         </h2>
         <div className="flex items-center pl-3">
           <span className="block w-24 h-1 rounded bg-[#fe9901]"></span>
@@ -16,9 +15,9 @@ const Contact = () => {
       <br />
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
-          <h1 className="text-4xl font-bold">
-            <span className="font-bold text-4xl text-[#fe9901]">D</span>haramchand{' '}
-            <span className="font-bold text-4xl text-[#95adbe]">P</span>atle
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#fe9901]">D</span>haramchand{' '}
+            <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">P</span>atle
           </h1>
           <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
           <div className="space-y-4">

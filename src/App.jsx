@@ -1,16 +1,15 @@
-import React from 'react';
-import Header from './components/Header';
-import './App.css'
-import Navbar from './components/Navbar';
-import HomeSection from './components/HomeSection';
-import About from './components/About';
-import WhyChooseMe from './components/WhyChooseMe';
-import MyWorks from './components/MyWorks';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import { Route, Routes } from "react-router-dom";
+import './App.css';
 import Footer from './components/Footer';
-import { Routes, Route } from "react-router-dom";
-import Home from './Home';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import HeroPage from './pages/HeroPage';
+import Home from './pages/Home';
+import MyWorksPage from './pages/MyWorksPage';
+import ServicesPage from './pages/ServicesPage';
+import WhyChooseMePage from './pages/WhyChooseMePage';
 
 
 function App() {
@@ -21,12 +20,12 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home/>} />
-        <Route path="/hero" element={<HomeSection />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/whychooseme" element={<WhyChooseMe />} />
-        <Route path="/myworks" element={<MyWorks />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/hero" element={<HeroPage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/whychooseme" element={<WhyChooseMePage />} />
+        <Route path="/myworks" element={<MyWorksPage />} />
+        <Route path="/Services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
 
       </Routes>
       <Footer />
