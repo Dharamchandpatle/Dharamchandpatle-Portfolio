@@ -1,63 +1,38 @@
 import { FaArrowRight, FaCss3Alt, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiMongodb, SiTailwindcss } from 'react-icons/si';
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const projects = [
   {
     id: 1,
-    title: 'Girls Beauty parlour website',
-    description: 'Transform Your Look with Our Modern Girls Beauty Parlour – Powered by HTML, CSS, JavaScript, and Tailwind CSS .',
-    image: 'images/Girls Beauty parlour website.png',
-    link: 'https://timely-lily-9bf1da.netlify.app/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
+    title: 'IET DAVV Student Attendance Management System',
+    description: 'Building a scalable full-stack attendance platform with Admin, Faculty, and Student roles, automated leave management, and real-time notifications.',
+    link: 'https://github.com/Dharamchandpatle',
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'JWT'],
   },
   {
     id: 2,
-    title: 'Purulia Travel Agency 🚀',
-    description: 'Purulia Travel Agency 🚀: Powered by React, JavaScript, and Node.js for Seamless Travel Experiences!',
-    image: 'images/purulia-travel.png',
-    link: 'https://puruliatravelsfinal.netlify.app/',
-    technologies: ['React js', 'JavaScript', 'Node js'],
+    title: 'RefineIQ — AI-Driven Smart Refinery Intelligence',
+    description: 'Developed an AI-powered refinery analytics platform for anomaly detection, energy forecasting, and optimization using Isolation Forest and Prophet.',
+    link: 'https://github.com/Dharamchandpatle',
+    technologies: ['Python', 'Scikit-learn', 'Prophet', 'FastAPI', 'React.js', 'MongoDB'],
   },
   {
     id: 3,
-    title: 'Connect Siksha Coding School',
-    description: 'Master the Web with Connect Siksha Coding School: Learn React.js, Node.js, and MongoDB to Build Dynamic, Full-Stack Applications!',
-    image: 'images/conectsiksha.png',
-    link: 'https://connectshiksha.com/',
-    technologies: ['React js', 'Node js', 'MongoDB'],
-  },
-  {
-    id: 4,
-    title: 'Udemy Coding School Clone',
-    description: 'Master full-stack development with cutting-edge technologies like React JS, JavaScript, and Node JS in this dynamic Udemy Coding School Clone!',
-    image: 'images/Udemy.png',
-    link: 'https://udemy-clone-bw5udkzns-dharamchandpatles-projects.vercel.app/',
-    technologies: ['React js', 'JavaScript', 'Node js'],
-  },
-  {
-    id: 5,
-    title: 'Boy Hair Shailu Website',
-    description: 'Discover the Ultimate Guide to Trendy Hairstyles with the Boy Hair Shailu Website - Powered by HTML, CSS, JavaScript, and Tailwind CSS for a Seamless User Experience.',
-    image: 'images/image.png',
-    link: 'https://fabulous-conkies-dac0a5.netlify.app/',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
-  },
-  {
-    id: 6,
-    title: 'Travel Agency',
-    description: 'Explore the world with us! We offer unforgettable journeys tailored to your dreams.',
-    image: 'images/traversy.png',
-    link: 'https://traversi-travel-reactjs-cwxutmoqb-dharamchandpatles-projects.vercel.app/',
-    technologies: ['React js', 'Node js', 'JavaScript', 'MongoDB'],
+    title: 'Travel Management Application',
+    description: 'Created a full-stack travel booking app with secure authentication, dynamic itinerary management, and responsive UX for seamless bookings.',
+    link: 'https://github.com/Dharamchandpatle',
+    technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="py-12 mt-10 bg-[#ffffff] text-[#000] lg:px-16 sm:px-8 px-4">
+    <section className="py-12 mt-10 bg-[#ffffff] text-[#000] lg:px-16 sm:px-8 px-4" id="myworks">
       <div className="flex items-center pb-4">
         <h2 className="text-2xl font-semibold">
           <span className="font-bold text-2xl sm:text-3xl lg:text-4xl text-[#95adbe]">03.</span> My Works
@@ -67,79 +42,38 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Swiper with autoplay */}
       <Swiper
         spaceBetween={30}
-        slidesPerView={3}
+        slidesPerView={1}
         loop={true}
         autoplay={{ delay: 3000 }}
         modules={[Autoplay]}
         breakpoints={{
-          320: {
-            slidesPerView: 1,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
-            <div className="group rounded-md shadow bg-[#f0eff4] dark:shadow-gray-400">
-              <div className="relative overflow-hidden rounded-t-md shadow dark:shadow-gray-700 ">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="scale-125 group-hover:scale-100 duration-500" // Hover effect from code1
-                />
+            <div className="p-6 rounded-lg transition-all duration-300 hover:scale-105" style={{ backgroundColor: '#f7f7f9', boxShadow: '0 6px 25px rgba(0,0,0,0.08)' }}>
+              <div className="mb-4 h-40 rounded-lg flex items-center justify-center bg-[#ececf0]">
+                <span className="text-sm text-[#4c4c4c] text-center px-4">{project.title} preview</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-2" style={{ color: '#111827' }}>{project.title}</h3>
+              <p className="mb-4 text-sm text-[#4c4c4c]">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech) => (
+                  <span key={tech} className="px-3 py-1 text-xs rounded-full" style={{ backgroundColor: '#fe9901', color: '#0f1419' }}>
+                    {tech}
+                  </span>
+                ))}
               </div>
 
-              <div className="p-4">
-                <h3 className="text-xl font-bold text-[#1b1b1b] mb-2">{project.title}</h3>
-                <p className="text-[#4c4c4c] mb-3 text-sm">{project.description}</p>
-
-                <div className="technologies mb-3">
-                  <h4 className="text-sm font-semibold">Technologies Used:</h4>
-                  <div className="flex flex-wrap space-x-1 mt-1">
-                    {project.technologies.map((tech) => (
-                      <div
-                        key={tech}
-                        className="flex items-center bg-[#ffff] rounded-lg p-1 mb-2 mx-2 shadow-md transition-transform transform hover:scale-102"
-                      >
-                        {tech === 'HTML' && <FaHtml5 className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'CSS' && <FaCss3Alt className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'JavaScript' && <FaJs className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'Tailwind CSS' && <SiTailwindcss className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'React js' && <FaReact className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'Node js' && <FaNodeJs className="text-lg text-[#fe9901] mr-2" />}
-                        {tech === 'MongoDB' && <SiMongodb className="text-lg text-[#fe9901] mr-2" />}
-
-                        &nbsp;<span className="text-[#4c4c4c] text-xs m1-2">{tech}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="btn-box mt-2">
-                  <h2 className="font-semibold text-[#000] leading-10">
-                    Have a Look:&nbsp;&nbsp;
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href={project.link}
-                      className="btn px-4 sm:px-4 py-1 text-base sm:text-base font-semibold rounded bg-[#95adbe] text-[#ffffff]"
-                    >
-                      Let's See &nbsp;<FaArrowRight />
-                    </a>
-                  </h2>
-                </div>
-              </div>
+              <a rel="noopener noreferrer" target="_blank" href={project.link} className="inline-flex items-center px-4 py-2 rounded bg-[#95adbe] text-white font-semibold transition-all hover:opacity-90">
+                View Project <FaArrowRight className="ml-2" />
+              </a>
             </div>
           </SwiperSlide>
         ))}

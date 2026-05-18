@@ -2,30 +2,25 @@ import { MdDesignServices, MdOutlineOndemandVideo } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
 
 const Services = () => {
-  // Data for each service
   const serviceData = [
     {
       id: 1,
-      title: "RESPONSIVE WEB DEVELOPMENT",
-      description:
-        "Crafting seamless digital experiences. Our responsive web development services ensure your site adapts flawlessly across all devices.",
-      icon: "settings",
+      title: 'Full-Stack Web Development',
+      description: 'Building responsive MERN and Python-powered applications with clean UI, secure APIs, and scalable backend architecture.',
+      icon: 'web',
     },
     {
       id: 2,
-      title: "CREATIVE DESIGN",
-      description:
-        "Transforming visions into visuals, we offer innovative design services tailored to your needs. From branding to digital experiences.",
-      icon: "design",
+      title: 'AI/ML Solutions',
+      description: 'Developing data-driven models, anomaly detection systems, and forecasting pipelines using Python, Scikit-learn, and Prophet.',
+      icon: 'ml',
     },
     {
       id: 3,
-      title: "Content Creator ",
-      description:
-        "Passionate Content Creator at Dharam's Code Mystery 7, crafting engaging and educational coding tutorials. Follow me on YouTube and Instagram for tips, tricks, and the latest in programming!",
-      icon: "code",
+      title: 'Technical Content & Mentoring',
+      description: 'Creating developer tutorials, portfolio-ready documentation, and mentoring aspiring coders through practical projects.',
+      icon: 'content',
     },
-    // Add more services here...
   ];
 
   return (
@@ -94,23 +89,14 @@ const ServiceCard = ({ title, description, icon }) => {
 
 // Icon Component
 const Icon = ({ icon }) => {
-  if (icon === "settings") {
-    return (
-      <TbWorldWww className="text-4xl" />
-
-    );
+  if (icon === 'web') {
+    return <TbWorldWww className='text-4xl text-[#fe9901]' />;
   }
-  if (icon === "design") {
-    return (
-      <MdDesignServices className="text-4xl" />
-
-    );
+  if (icon === 'ml') {
+    return <MdDesignServices className='text-4xl text-[#fe9901]' />;
   }
-  if (icon === "code") {
-    return (
-      <MdOutlineOndemandVideo className="text-4xl"/>
-
-    );
+  if (icon === 'content') {
+    return <MdOutlineOndemandVideo className='text-4xl text-[#fe9901]' />;
   }
   return null;
 };

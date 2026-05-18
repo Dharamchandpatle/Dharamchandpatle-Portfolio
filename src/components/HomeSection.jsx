@@ -1,23 +1,42 @@
 import { Typewriter } from 'react-simple-typewriter';
 // import Dharamchand3 from '../assets/images/Dharamchand3.jpg';
+import { useEffect, useState } from 'react';
 import { FaDownload } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import Loader from './Loader';
 
 const HomeSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Show loader for 3 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen bg-bg-primary">
+        <Loader />
+      </div>
+    );
+  }
+
   return (
-    <section className="bg-[#f0eff4] text-[#000] sm:px-8 md:px-12 lg:px-16 xl:px-20" id="home">
+    <section className="bg-bg-primary text-text-primary sm:px-8 md:px-12 lg:px-16 xl:px-20" id="home">
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center p-6 text-center sm:text-left lg:max-w-md xl:max-w-xl lg:w-3/5">
           <h2 className="font-semibold text-2xl sm:text-3xl lg:text-4xl">
             <span className="text-4xl">H</span>i , My Name is 
           </h2>
           <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold leading-snug">
-            <span className="font-bold text-4xl sm:text-5xl lg:text-6xl text-[#fe9901]">D</span>haramchand 
-            <span className="font-bold text-3xl sm:text-4xl lg:text-5xl text-[#95adbe]">P</span>atle 
+            <span className="font-bold text-4xl sm:text-5xl lg:text-6xl text-color-primary">D</span>haramchand 
+            <span className="font-bold text-3xl sm:text-4xl lg:text-5xl text-color-secondary">P</span>atle 
           </h1>
           <br />
           <h3 className="font-semibold text-2xl sm:text-3xl">
-            <span style={{ color: '#000' }}>
+            <span className="text-text-primary">
               <Typewriter
                 words={[
                   "I build things for the web.",
@@ -34,10 +53,10 @@ const HomeSection = () => {
             </span>
           </h3>
           <p className="mt-6 mb-8 text-base sm:text-lg lg:text-base xl:text-lg">
-            I am a <span className="text-2xl text-[#fe9901]">F</span>ull 
-            <span className="text-2xl text-[#fe9901]"> S</span>tack
-            <span className="text-2xl text-[#fe9901]"> W</span>eb 
-            <span className="text-2xl text-[#fe9901]"> D</span>eveloper. 
+            I am a <span className="text-2xl text-color-primary">F</span>ull 
+            <span className="text-2xl text-color-primary"> S</span>tack
+            <span className="text-2xl text-color-primary"> W</span>eb 
+            <span className="text-2xl text-color-primary"> D</span>eveloper. 
             with expertise in React.js, Tailwind CSS, JavaScript, and Node.js , Mongo DB .  
             <br className="hidden md:inline lg:hidden" />Proficient in the MERN stack and skilled in UI/UX design.
           </p>
@@ -47,14 +66,14 @@ const HomeSection = () => {
               download 
               target="_blank" 
               href="https://drive.google.com/file/d/186Kk1b1d-39D3LFdR9Y3RmczzvnTehzP/view?usp=drivesdk" 
-              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#95adbe] text-[#ffffff]"
+              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-border-primary bg-color-secondary text-black"
             >
               <FaDownload /> &nbsp; Resume
             </a>
             <NavLink 
               rel="noopener noreferrer" 
               to="/contact" 
-              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-[#95adbe] bg-[#f0eff4]"
+              className="btn px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold rounded border-2 border-border-primary bg-bg-primary"
             >
               Connect with me 
             </NavLink>
